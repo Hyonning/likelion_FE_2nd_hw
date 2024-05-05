@@ -22,4 +22,36 @@ body {
 
 .animation {
   margin-top: 300px;
+  animation-duration: 3s;
+  animation-name: slidein;
+  animation-iteration-count: infinite;
+}
+
+@media (max-width:600px)
+{
+  .hide{
+    height: 30px;
+    width: 100vw;
+    background-color: orange;
+    padding: 20px;
+    font-size: 30px;
+    visibility: hidden;
+  }
+
+  .fs{
+    margin-top: 20px;
+    font-size: 50px;
+  }
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 500%;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
 }
